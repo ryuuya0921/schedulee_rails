@@ -1,9 +1,9 @@
-<h1>予定一覧</h1>
+<h3>予定一覧</h3>
 
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>id</th>
       <th>タイトル</th>
       <th>開始日</th>
       <th>終了日</th>
@@ -14,3 +14,22 @@
       <th></th>
     </tr>
   </thead>
+
+  <tbody>
+    <% @events.each do |task| %>
+      <tr>
+        <td><%= task.id %></td>
+        <td><%= task.title %></td>
+        <td><%= task.start_datetime %></td>
+        <td><%= task.end_datetime %></td>
+        <td><%= task.is_all_day %></td>
+        <td><%= task.updated_at %></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p><%= link_to "新規追加", :new_task %></p>
