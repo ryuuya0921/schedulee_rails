@@ -5,7 +5,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.datetime :start_date
       t.datetime :end_date
       t.boolean :all_day
-      
+      t.string :memo, limit: 500
 
       t.timestamps
     end
