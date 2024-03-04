@@ -8,7 +8,12 @@ class TasksController < ApplicationController
   end
   
   def show #詳細表示画面
-
+    @event = Event.find(params[id])
+  end
+  
+  def edit #編集画面
+    @event = Event.find(params[id])
   end
 
+  
 end
