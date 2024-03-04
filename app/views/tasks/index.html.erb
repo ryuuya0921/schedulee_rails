@@ -18,12 +18,13 @@
   <tbody>
     <% @events.each do |task| %>
       <tr>
-        <td><%= task.id %></td>
-        <td><%= task.title %></td>
-        <td><%= task.start_datetime %></td>
-        <td><%= task.end_datetime %></td>
-        <td><%= task.is_all_day %></td>
-        <td><%= task.updated_at %></td>
+      <td><%= task.id %></td>
+      <td><%= task.title %></td>
+      <td><%= task.start_date %></td>
+      <td><%= task.end_date %></td>
+      <td><%= task.all_day %></td>
+      <td><%= task.updated_at %></td>
+
         <td></td>
         <td></td>
         <td></td>

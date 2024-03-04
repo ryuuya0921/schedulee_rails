@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root to: 'tasks#index' # トップページの設定にはrootが用いられる
   
   get 'tasks/new' => 'tasks/new'
+  get 'tasks/edit' => 'tasks/edit'
 end
