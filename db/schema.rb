@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2024_02_27_144333) do
 
   create_table "events", force: :cascade do |t|
     t.string "title", limit: 20
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.date "start_date"
+    t.date "end_date"
     t.boolean "all_day"
     t.string "memo", limit: 500
     t.datetime "created_at", precision: 6, null: false
