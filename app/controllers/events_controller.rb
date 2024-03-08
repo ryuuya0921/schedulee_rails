@@ -1,4 +1,4 @@
-class TasksController < ApplicationController
+class EventsController < ApplicationController
   def index #一覧表示画面
     @events = Event.all
   end
