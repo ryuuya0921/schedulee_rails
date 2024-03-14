@@ -19,9 +19,11 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
 
     if @event.save
-      redirect_to event_path(@event), notice: 'イベントが作成されました'
+      
+      flash[:notice] = 'イベントが作成されました'
+      redirect_to event_path(@event)
     else
-      render :new
+      render :new, alert: '保存に失敗しました'
     end
   end
 

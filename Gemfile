@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'pry-rails' #デバック
+
 #バージョンが違うため、3系を使うように指示
 gem 'psych', '~> 3.0'
 
