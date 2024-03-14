@@ -1,3 +1,20 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.partial {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* 必要に応じて、他の要素よりも上に表示されるようにz-indexを設定します */
+  /* その他のスタイルを追加 */
+}
+
+
+
