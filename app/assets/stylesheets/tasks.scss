@@ -16,6 +16,10 @@ header {
   /* その他のスタイルを追加 */
 }
 
+body {
+  margin: 0; /* マージンをゼロに設定 */
+}
+
 table th {
   padding: 10px 20px;
   border-bottom: 3px solid gray;
