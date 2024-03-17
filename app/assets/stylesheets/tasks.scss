@@ -18,11 +18,17 @@ header {
 
 table th {
   padding: 10px 20px;
-  border-bottom: 2px solid gray;
+  border-bottom: 3px solid gray;
 }
+
 table td {
-  background-color: #dfffff;
-  padding: 10px 10px;
+  background-color: #ffbfbf; /* 背景色を指定 */
+  padding: 10px; /* パディングを調整 */
+  box-sizing: border-box; /* パディングを含めたボックスサイズに設定 */
+  height: 50px; /* セルの高さを固定 */
 }
+
+
+
 
 
