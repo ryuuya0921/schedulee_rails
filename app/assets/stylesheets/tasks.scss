@@ -28,7 +28,19 @@ table td {
   height: 50px; /* セルの高さを固定 */
 }
 
+.backindex {
+  color: rgb(44, 33, 255);
+  font-size: 12px;
+  font-weight: 700;
+  
+  position: relative;
+  top: 50px;
+  left: 1px;
+}
 
 
-
-
+.back {
+  position: relative;
+  top: 50px;
+  left: 1px;
+}
