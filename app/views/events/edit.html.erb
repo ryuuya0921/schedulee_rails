@@ -1,8 +1,7 @@
-<%= render "shared/partial" %>
 
 <h3>予定の編集</h3>
 
-<%= form_with model: @task do |f| %>
+<%= form_with model: @event do |f| %>
   <table>
     <tr>
       <th><%= f.label :title ,"タイトル" %></th>
@@ -33,7 +32,7 @@
   <div>
     <ul>
       <li><%= f.submit "編集を完了する"%></li>
-      <li><%= link_to "キャンセル", :tasks %></li>
+      <li><%= link_to "キャンセル", event_path(@event) %></li>
     </ul>
   </div>
 
@@ -41,5 +40,7 @@
   <p class="notice"><%= flash[:notice_no_update] %></p>
 <% end %>
 
-<%= render "shared/error", obj: @task %> 
+<%= render "shared/error", obj: @event %> 
 <% end %>
+
+<%= render partial: "shared/error", locals: { obj: @event } %>
