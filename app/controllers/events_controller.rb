@@ -35,6 +35,7 @@ class EventsController < ApplicationController
 
       flash[:notice] = 'イベントが更新されました'
       redirect_to event_path(@event)
+
     else
       render 'edit'
     end
