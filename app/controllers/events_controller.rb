@@ -34,7 +34,7 @@ class EventsController < ApplicationController
       #更新に成功した時の処理
 
       flash[:notice] = 'イベントが更新されました'
-      redirect_to event_path(@event)
+      redirect_to events_path, notice: 'イベントが更新されました'
 
     else
       render 'edit'
