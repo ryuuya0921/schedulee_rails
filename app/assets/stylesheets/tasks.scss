@@ -50,16 +50,19 @@ table td {
 }
 
 .index1 {
-  position: relative;
-  top: 20px;
-  left: 70%;
+  position: fixed; /* 要素を固定位置に配置 */
+  top: 80px; /* 上部からの距離 */
+  left: 60%; /* 右端からの距離 */
+  z-index: 1000; /* 他の要素よりも上に表示 */
 }
+
+
 
 h2 {
   position: relative;
-  top: 50px;
+  top: 40px;
   left: 1px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3 {
