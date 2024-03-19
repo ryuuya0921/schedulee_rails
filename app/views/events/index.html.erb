@@ -25,18 +25,19 @@
     <% @events.each do |event| %>
       <tr>
       
-      <td><%= event.id %></td>
-      <td><%= event.title %></td>
-      <td><%= event.start_date %></td>
-      <td><%= event.end_date %></td>
-      <td><%= event.all_day %></td>
-      <td><%= event.created_at.strftime("%Y-%m-%d %H:%M") %></td><%# 日時の設定 %>
+        <td><%= event.id %></td>
+        <td><%= event.title %></td>
+        <td><%= event.start_date %></td>
+        <td><%= event.end_date %></td>
+        <td><%= event.all_day %></td>
+        <td><%= event.created_at.strftime("%Y-%m-%d %H:%M") %></td><%# 日時の設定 %>
       
         <td><%= link_to "詳細", event_path(event) %></td>
         <!-- 詳細ページへのリンク -->
         <td><%= link_to "編集", edit_event_path(event) %></td>
         <!-- 編集ページへのリンク -->
-        <td>削除</td>
+        <td><%= link_to "削除", event_path(event), method: :delete, data: { confirm: "本当に削除しますか？" }, class: "item-destroy" %></td>
+
       </tr>
     <% end %>
   </tbody>
