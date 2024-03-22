@@ -29,7 +29,13 @@
         <td><%= event.title %></td>
         <td><%= event.start_date %></td>
         <td><%= event.end_date %></td>
-        <td><%= event.all_day %></td>
+
+        <td class="all-day-event">
+        <% if event.is_all_day %>
+          ⚪︎
+        <% end %>
+        </td>
+
         <td><%= event.created_at.strftime("%Y-%m-%d %H:%M") %></td><%# 日時の設定 %>
       
         <td><%= link_to "詳細", event_path(event) %></td>
