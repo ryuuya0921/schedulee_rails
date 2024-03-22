@@ -3,8 +3,11 @@
 <h2>予定一覧</h2>
 
 <div class="index1">
-  <p><%= link_to "新規追加", new_event_path %></p>
+  <%= link_to new_event_path, class: "btn btn-primary btn-sm" do %>
+    新規追加
+  <% end %>
 </div>
+
 
 <table>
   <thead>
