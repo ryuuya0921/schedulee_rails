@@ -124,3 +124,12 @@ table td.all-day-event {
 .back-index a:hover {
   text-decoration: underline;
 }
+
+.title-with-edit {
+  display: flex;
+  align-items: center;
+}
+
+.title-with-edit h1 {
+  margin-right: 35%; /* タイトルと編集リンクの間隔を調整 */
+}
