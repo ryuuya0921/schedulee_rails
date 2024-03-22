@@ -52,7 +52,7 @@ table td {
 .index1 {
   position: fixed; /* 要素を固定位置に配置 */
   top: 80px; /* 上部からの距離 */
-  left: 60%; /* 右端からの距離 */
+  left: 50%; /* 右端からの距離 */
   z-index: 1000; /* 他の要素よりも上に表示 */
 }
 
@@ -85,3 +85,10 @@ table td.all-day-event {
   font-size: 20px;
 }
 
+.info {
+  display: flex;
+}
+
+.info p {
+  margin-right: 30%; /* 各要素の間隔を調整 */
+}

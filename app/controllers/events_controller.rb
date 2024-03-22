@@ -50,6 +50,11 @@ class EventsController < ApplicationController
   end
 
 
+  def index # コントローラーで現在の日付を取得する
+    @events = Event.all
+    @today = Date.today
+  end
+
 
   private
 
