@@ -1,16 +1,18 @@
-
-<div class="back">
-<h1><%= @event.title %></h1>
+<div class="event-details">
 
 
-<p>開始日: <%= @event.start_date %></p>
-<p>終了日: <%= @event.end_date %></p>
-<p>終日: <%= @event.is_all_day %></p>
-<p>スケジュールメモ: <%= @event.memo %></p>
 
-</div>
-
-
-<div class="backindex">
+<div class="back-index">
   <%= link_to '← 一覧に戻る', events_path %>
 </div>
+
+  <h1><%= @event.title %></h1>
+
+  <p>開始日: <%= @event.start_date %></p>
+  <p>終了日: <%= @event.end_date %></p>
+  <p>終日: <%= @event.is_all_day ? 'はい' : 'いいえ' %></p>
+  <p>スケジュールメモ: <%= @event.memo %></p>
+</div>
+
+
+
