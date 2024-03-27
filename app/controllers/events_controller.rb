@@ -55,7 +55,6 @@ class EventsController < ApplicationController
     @today = Date.today
   end
 
-
   private
 
   def event_params
